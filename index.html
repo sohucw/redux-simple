@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>redux-simple</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .title {
+            text-align: center;
+            margin: 50px;
+            color:#3385ff !important;
+        }
+        .nav,.input {
+            text-align: center;
+            margin: 50px;
+        }
+        #name {
+            width: 50%;
+            height: 30px;
+            border: 1px solid #e9e9e9;
+        }
+        button {
+            height: 30px;
+            width: 50px;
+            background-color: #3385ff;
+            border-color: #2e6da4;
+            color: #fff;
+            border: 1px solid transparent;
+            border-radius: 4px;
+        }
+        .list {
+            text-align: center;
+            margin: 50px;
+        }
+        ul {
+            border-bottom: 1px solid #e9e9e9;
+        }
+        li {
+            list-style: none;
+            height: 30px;
+            line-height: 30px;
+            border: 1px solid #e9e9e9;
+            border-bottom: none;
+        }
+        ul li .line {
+            text-decoration: line-through;
+        }
+        .del {
+            color:#3385ff;
+            cursor: pointer;
+            float: right;
+        }
+        .nav a {
+            color:#3385ff !important;
+            text-decoration: none;
+            margin-right: 10px;
+        }
+
+
+    </style>
+</head>
+<body>
+<div class="title">
+    <h1>Redux TodoList Demo</h1>
+</div>
+    <div class="input">
+        <input type="text" id="name" />
+        <button id="button">添加</button>
+    </div>
+    <div class="list">
+        <ul id="ui">
+        </ul>
+    </div>
+    <div class="nav">
+        <a href="">showAll</a>
+        <a href="">showDel</a>
+    </div>
+<script type="text/javascript" src="redux.js"> </script>
+<script src="index.js"></script>
+</body>
+</html>
